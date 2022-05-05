@@ -1,37 +1,35 @@
 .login-container{
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(135deg, #ffe645 0%, #e2aa02 100%);
-    position: relative;
+    min-height: 100vh;
+    // background: linear-gradient(135deg, #ffe645 0%, #e2aa02 100%);
+    background: linear-gradient(135deg, #134bb4 0%, #200c92 100%);
+    padding: 3%;
     .logo{
-        font-size: 70px;
+        font-size: 60px;
         font-weight: bold;
         font-family: cursive;
         letter-spacing: 10px;
-        position: absolute;
-        top: 50px;
-        right: 50px;
+        text-align: center;
+        color: #fff
     }
     .desc{
         font-size: 15px;
         font-family: cursive;
         letter-spacing: 5px;
-        position: absolute;
-        top: 200px;
-        right: 50px;
-        text-align: right;
-        width: 900px;
+        text-align: center;
+        margin: 30px auto;
+        max-width: 700px;
+        color: #fff;
     }
     .login-form{
-        width: 500px;
+        max-width: 500px;
         height: 300px;
         padding: 20px;
         background-color: #fff;
         border-radius: 10px;
-        position: absolute;
-        bottom: 20px;
-        right: 50px;
+        margin: auto;
         box-shadow: 5px 5px 15px #383839;
+        position: relative;
         .form-group{
             margin-top: 20px;
         }
@@ -44,10 +42,41 @@
             }
             .error{
                 position: absolute;
-                top: 32px;
-                right: 5px;
+                top: 25px;
+                right: 20px;
                 color: #ff0000;
             }
         }
     }
+}
+@media screen and (max-width: 768px){
+    .login-container{
+        .logo{
+            font-size: 50px;
+        }
+        .desc{
+            font-size: 13px;
+        }
+        .login-form{
+            label{
+                font-size: 13px;
+            }
+            .btn-container{
+                .btn{
+                    font-size: 13px;
+                }
+            }
+        }
+    }    
+}
+@media screen and (max-width: 462px){
+    .login-container{
+        .logo{
+            font-size: 30px;
+        }
+        .desc{
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+    }    
 }
